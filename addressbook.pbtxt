@@ -1,0 +1,22 @@
+people{
+    id: 1
+    name: "feyn"
+    email: "feyn@daangn.com"
+    phones {
+        number: "010-1234-1234"
+        type: PHONE_TYPE_MOBILE  # enum은 이름과 숫자 모두로 표시 가능
+    }
+}
+people{
+    id: 2
+    name: "dante"
+    email: "dante@daangn.com"
+    phones {
+        number: "010-2345-2345"
+        type: 1
+    }
+    phones {
+        number: "010-3456-3456"
+        type: PHONE_TYPE_WORK
+    }
+}
