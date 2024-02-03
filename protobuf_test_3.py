@@ -7,7 +7,7 @@ SERIALIZED_FILEPATH = "ADDRESS_BOOK_FILE"
 
 
 def parse_adressbook_pbtxt(pbtxt_filepath: str):
-    address_book = addressbook_pb2.PhoneType()
+    address_book = addressbook_pb2.AddressBook()
 
     with open(pbtxt_filepath, "r", encoding="UTF-8") as f:
         text_format.Parse(f.read(), address_book)
